@@ -1,0 +1,15 @@
+.mood-selector {
+    margin-bottom: 20px;
+  }
+  
+  .mood-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .mood-options button {
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }

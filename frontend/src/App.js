@@ -1,21 +1,15 @@
-import React from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Home from "./pages/Home";
-import DashboardPafe from "./pages/DashboardPage";
-import Navbar from "./components/Navbar";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom'; // Correct import
+import Dashboard from './pages/Dashboard';
 import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div className="app-container">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<DashboardPafe />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="app">
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
+    </div>
   );
 }
 
