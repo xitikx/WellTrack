@@ -1,15 +1,50 @@
 .mood-selector {
-    margin-bottom: 20px;
-  }
-  
-  .mood-options {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .mood-options button {
-    font-size: 24px;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #B0D9B1; /* Light Green background */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mood-selector h3 {
+  font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+  font-size: 1.5rem; /* Slightly larger font size */
+  font-weight: 600; /* Semi-bold weight */
+  color: #618264; /* Dark Green for headings */
+  margin-bottom: 15px; /* Add more spacing below the heading */
+  letter-spacing: 0.5px; /* Slight letter spacing for better readability */
+}
+
+.mood-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Wrap emojis for smaller screens */
+}
+
+.mood-button {
+  font-size: 2rem;
+  border: none;
+  background-color: #D0E7D2; /* Very Light Green for buttons */
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.mood-button:hover {
+  background-color: #79AC78; /* Medium Green for hover */
+  transform: scale(1.2);
+}
+
+.mood-button.selected {
+  background-color: #618264; /* Dark Green for selected state */
+  color: white;
+}
+
+.mood-selector p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #618264; /* Dark Green for text */
+}
